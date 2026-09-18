@@ -560,7 +560,7 @@ COMMITTEE HANDBOOK CONTENT:
         "anthropic-version":"2023-06-01",
         "anthropic-dangerous-direct-browser-access":"true"
       },
-      body:JSON.stringify({model:MODEL,max_tokens:800,system:systemPrompt,messages:history})
+      body:JSON.stringify({model:MODEL,max_tokens:1000,system:systemPrompt,messages:history})
     }).then(resp=>{
       if(!resp.ok) return resp.text().then(t=>{throw new Error("HTTP "+resp.status+": "+t.slice(0,200));});
       return resp.json();
