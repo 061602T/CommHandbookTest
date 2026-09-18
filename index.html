@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Committee Handbook | New York City Bar Association</title>
+<link rel="icon" type="image/jpeg" sizes="32x32" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAAgACADAREAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAEGAgQI/8QALBAAAQIEBQMDBAMAAAAAAAAAAQIDAAQFEQYHEiExExQiQVFxQlORklKBof/EABYBAQEBAAAAAAAAAAAAAAAAAAAEAf/EAB8RAAEEAgMBAQAAAAAAAAAAAAEAAgQRA1EVUpEFEv/aAAwDAQACEQMRAD8A6nU62g2UtKT7E2jaKywl3DP3W/2EKKWEdwz91v8AYQopYTS62s2StKj7A3hRSwoHMvAtJxXP092eYqZdShTfVklhIA1JsF3B/kbH5i2JPyRgWsog7UUv5+OSQ592NKOpuS1BqDjLfTxGyXWg6FLfToTdIOknRsb3HHpFfN5+o8UnB4Nn1az+UdAaZDgl8TLJKQWw+nUAdO5HT48j/aT8w5vP1HicHg2fVe5Y4Do+F3ahNyCah1lrMuTOL1HQlR8k+I2VYH1iSXPySQGvoAaVcT5+OMSWWSdrPMnGEphCapkxNSk9Nh5DqA2w0HEjdB1G5FlbbHfkxkOE6Tf5cBW1sua2NX6aTelCN5t0BCEg0TEBUkseQYSCQ2nSQfLhQuD8xbwmTu1Rc1j6ORN5w0uYnZuaakMSy/cLbc0tsI8VIA0/VxcXI9eIcJk7tTmsfRyusqMUymIpSpIlJeotJZfDh7xsIN1jgWJ2Gn/YhlwnRiA4g3pXRJjZIJaCK2rsgHkAxGrEtKfYfiCI0p9h+IImABwLQRf/2Q==">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--amber:#ffb017;--teal:#0f766e;--teal-dark:#0c5d57;--navy:#003359;--blue:#0071c7;--line:#ddd;
+    --sans:'Inter',system-ui,Arial,sans-serif;}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:var(--sans);color:#222;background:#fff;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+
+  /* amber hero (full screen), white logo + title + intro, no nav bar */
+  .hero{background:var(--amber);color:#fff;min-height:100vh;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;text-align:center;padding:48px 24px}
+  .hero img{height:60px;width:auto;margin-bottom:30px}
+  .hero h1{font-weight:600;font-size:44px;margin:0 0 26px;color:#fff;letter-spacing:.01em}
+  .hero .intro{max-width:1120px;margin:0 auto;font-size:16.5px;line-height:1.7;color:#fff;text-align:justify}
+
+  /* full-width teal section-header bars */
+  .section{padding-bottom:26px}
+  .sec-h{background:var(--teal);padding:13px 16px;text-align:center}
+  .sec-h h2{color:#fff;font-weight:700;font-size:20px;margin:0;letter-spacing:.01em}
+  .sec-inner{max-width:860px;margin:0 auto;padding:22px 20px 4px}
+  .sec-intro{font-size:14.5px;color:#333;line-height:1.65;margin-bottom:16px}
+  .sec-intro blockquote{margin:0;color:#444}
+  .sec-intro ul{padding-left:20px}
+
+  /* accordion panels */
+  .accordion{margin-bottom:4px}
+  .panel{border:1px solid var(--line);border-radius:3px;margin-bottom:7px;overflow:hidden;background:#fff}
+  .panel details>summary{list-style:none;cursor:pointer;background:#f5f5f5;padding:11px 14px;font-weight:600;color:#222;
+    font-size:14.5px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .panel details>summary::-webkit-details-marker{display:none}
+  .panel details>summary::after{content:'+';font-weight:700;color:var(--teal);font-size:17px;line-height:1}
+  .panel details[open]>summary::after{content:'\2212'}
+  .panel details>summary:hover{background:#eef0f2}
+  .panel-body{padding:13px 15px;border-top:1px solid var(--line);color:#222;font-size:14.5px}
+  .panel-body h3{font-size:14.5px;color:#000;margin:13px 0 4px}
+  .panel-body h4{font-size:13.5px;color:var(--teal);margin:11px 0 2px}
+  .panel-body ul{padding-left:20px} .panel-body li{margin:4px 0}
+  .panel-body a{color:var(--blue);text-decoration:underline}
+  .panel-body blockquote{border-left:3px solid var(--amber);background:#fbf7ee;margin:9px 0;padding:6px 12px}
+  .panel-body table{width:100%;border-collapse:collapse;margin:9px 0;font-size:13.5px}
+  .panel-body th{background:var(--teal);color:#fff;text-align:left;padding:8px 10px}
+  .panel-body td{border:1px solid var(--line);padding:8px 10px;vertical-align:top}
+  .panel-body tr:nth-child(even) td{background:#f6faf8}
+  .verify{display:inline-block;font-size:11px;font-weight:700;color:#8a6d1f;background:#fdf4dd;border:1px solid #f0d488;border-radius:2px;padding:1px 7px;margin-left:4px;text-transform:uppercase;cursor:help}
+
+  footer{background:var(--teal);color:#dff0ea;text-align:center;font-size:12.5px;padding:16px}
+
+  /* launcher + live chat (teal, so it reads on the amber hero) */
+  .launcher{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;align-items:center;gap:9px;background:var(--teal);color:#fff;
+    border:none;border-radius:4px;padding:13px 18px 13px 15px;cursor:pointer;box-shadow:0 8px 26px rgba(0,0,0,.32);
+    font:inherit;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.03em}
+  .launcher:hover{background:var(--teal-dark)} .launcher svg{width:20px;height:20px}
+  .cw{position:fixed;right:22px;bottom:88px;z-index:61;width:min(384px,calc(100vw - 44px));height:min(560px,calc(100vh - 150px));
+    background:#fff;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.34);display:none;flex-direction:column;overflow:hidden}
+  .cw.open{display:flex}
+  .cw-h{background:var(--teal);color:#fff;padding:13px 15px;display:flex;justify-content:space-between;align-items:center}
+  .cw-h .t{font-weight:700;font-size:15px} .cw-h .t small{display:block;font-weight:500;font-size:11px;color:#bfe4df}
+  .cw-h button{background:none;border:none;color:#bfe4df;font-size:20px;cursor:pointer} .cw-h button:hover{color:#fff} .cw-h .actions{display:flex;align-items:center;gap:8px} .cw-h .cw-new{font-size:12px;font-weight:600;color:#fff;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);border-radius:4px;padding:4px 9px;line-height:1.25} .cw-h .cw-new:hover{background:rgba(255,255,255,.28)}
+  .cw-disc{background:#fdf4dd;border-bottom:1px solid #f0d488;color:#5a4d20;font-size:11px;padding:7px 13px;line-height:1.4}
+  .cw-key{background:#f4f7f5;border-bottom:1px solid var(--line);padding:8px 12px;display:flex;gap:6px;align-items:center}
+  .cw-key input{flex:1;font:inherit;font-size:12px;font-family:monospace;border:1px solid var(--line);border-radius:5px;padding:6px 8px;min-width:0}
+  .cw-key button{flex:none;background:var(--navy);color:#fff;border:none;border-radius:5px;padding:6px 10px;font:inherit;font-weight:700;font-size:11.5px;cursor:pointer}
+  .cw-key button:hover{background:#014a7a}
+  .cw-keystatus{flex:none;font-size:10.5px;color:#5b6675;white-space:nowrap}
+  .cw-bot.cw-err{border-color:#f0d488;background:#fffaf0;color:#7a4a12}
+  .cw-body{flex:1;overflow-y:auto;padding:15px;display:flex;flex-direction:column;gap:11px;background:#f4f7f5}
+  .cw-msg{padding:10px 12px;font-size:14px;border-radius:10px;max-width:88%;line-height:1.5}
+  .cw-user{align-self:flex-end;background:var(--teal);color:#fff;border-bottom-right-radius:3px}
+  .cw-bot{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:3px}
+  .cw-bot a{color:var(--blue)} .cw-bot strong{font-weight:600}
+  .cw-empty{margin:auto;text-align:center;color:#5b6675;font-size:13.5px}
+  .cw-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+  .cw-chip{font:inherit;font-size:12px;color:var(--teal);background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 11px;cursor:pointer}
+  .cw-chip:hover{background:#f0f6f3}
+  .typing i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#889;margin:0 1px;animation:b 1.2s infinite}
+  .typing i:nth-child(2){animation-delay:.2s}.typing i:nth-child(3){animation-delay:.4s}
+  @keyframes b{0%,60%,100%{opacity:.25}30%{opacity:1}}
+  .cw-foot{border-top:1px solid var(--line);padding:9px 11px;display:flex;gap:7px;background:#fff}
+  .cw-foot input{flex:1;font:inherit;font-size:14px;border:1px solid var(--line);border-radius:6px;padding:9px 11px}
+  .cw-foot input:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+  .cw-foot button{background:var(--teal);color:#fff;border:none;border-radius:6px;padding:9px 15px;font:inherit;font-weight:700;cursor:pointer}
+  .cw-foot button:disabled{opacity:.5;cursor:default}
+  @media(max-width:600px){.hero h1{font-size:32px}.hero .intro{font-size:15px}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<section class="hero" id="top">
+  <img src="data:image/png;base64,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" alt="New York City Bar">
+  <h1>Committee Handbook</h1>
+  <div class="intro"><p>The City Bar relies on its committee chairs, secretaries and committee members to be ambassadors of the bar. Chairs play a key role in giving as many people as possible the opportunity to serve on a committee, encouraging members to draft reports, plan programs, and get involved in public service, and helping recruit new members to the committee and the City Bar.</p></div>
+</section>
+
+<main>
+  <section class="section" id="committee-membership"><header class="sec-h"><h2>Committee Membership</h2></header><div class="sec-inner"><div class="sec-intro"><p>Committee service is a benefit of membership. Keep the committee roster full by filling all vacancies; new members may be added throughout the year.</p></div><div class="accordion"><div class="panel"><details><summary>Appointment Process</summary><div class="panel-body"><ul>
+<li>Committee members are appointed by the <strong>President</strong>, acting on the recommendation of committee chairs.</li>
+<li>Members generally serve <strong>three-year terms</strong>. Most are appointed in the spring to begin a term in the fall, but vacancies may be filled throughout the year.</li>
+<li>The <strong>Committee Management page</strong> (available to the Chair and Secretary) lets you: get an updated roster, see vacancies by class, see applicants and their profiles/resumes, and nominate an applicant (nomination notifies staff of your request; it does not automatically place the person).</li>
+<li>Help navigating the Committee Management page: <strong>Committee Membership</strong>, committeemembership@nycbar.org.</li>
+</ul></div></details></div><div class="panel"><details><summary>Committee Membership Criteria</summary><div class="panel-body"><ul>
+<li><strong>Maximum voting members: 39</strong> (three staggered classes of 13). There is <strong>no limit</strong> on voting members for Councils, Task Forces, or Working Groups.</li>
+<li>Beyond the 39 voting members, committees may have <strong>non-voting</strong> members: affiliates, law students, and adjuncts (definitions below).</li>
+<li><strong>No more than one member of a firm, law department, organization, or institution</strong> may be a <strong>voting</strong> member of the same committee. There may be one voting member plus more than one non-voting affiliate from the same firm/employer.</li>
+<li>Report all resignations and new nominations to <strong>Committee Membership</strong> (committeemembership@nycbar.org) or via the Committee Management page.</li>
+<li><strong>Diversity:</strong> When nominating members, consider all ways they may contribute to representation (historically underrepresented groups, socio-economic background, age, military service, ideological viewpoint, practice setting, and a mix of new and experienced lawyers).</li>
+<li><strong>Term limits:</strong> Three-year term limit on committee service. No member may serve two consecutive three-year voting terms. After three years as a voting member, a member may be appointed as a <strong>non-voting affiliate</strong>.</li>
+<li><strong>Councils, task forces, and working groups:</strong> appointed for a three-year voting term but <strong>may be reappointed</strong> for a consecutive voting term.</li>
+<li>Difficulty filling vacancies? Contact <strong>Martha Harris</strong> (212-382-6607, mharris@nycbar.org) or <strong>Committee Membership</strong> (committeemembership@nycbar.org).</li>
+</ul></div></details></div><div class="panel"><details><summary>Categories of Committee Membership</summary><div class="panel-body"><p>Except when there's a particular reason for someone to attend a given meeting, all attendees should be regular voting members or fall within a category below.</p>
+<p><strong>Affiliate Members</strong>
+- Non-voting; <strong>one-year term</strong>; must be members of the profession and members of the City Bar.
+- May be reappointed at the chair's request.
+- Do <strong>not</strong> count toward the 39 voting members.
+- Example uses: extending the term of someone rotating off; adding someone from the same firm as a voting member (a committee may have more than one affiliate from the same firm/organization if the chair believes discussion and perspective remain balanced — only one may be a voting member); involving a junior member of the bar; adding a government official or other high-level individual who can't fully commit; keeping the most recent outgoing chair.
+- Questions on who qualifies: <strong>Committee Membership</strong> (committeemembership@nycbar.org).</p>
+<p><strong>Adjunct Members (Non-Lawyers)</strong>
+- Non-lawyers appointed by the chair; <strong>non-voting</strong>; do <strong>not</strong> count toward the 39.
+- <strong>One-year terms</strong>, reappointable at the chair's request.</p>
+<p><strong>Law Student Members</strong>
+- Chairs are urged to appoint a few. <strong>Non-voting</strong>; do <strong>not</strong> count toward the 39.
+- <strong>One-year terms</strong>, reappointable at the chair's request.</p></div></details></div><div class="panel"><details><summary>Changes in a Member's Address or Status</summary><div class="panel-body"><ul>
+<li><strong>Change of address, telephone, fax, or email:</strong> Customer Relations Department (212-382-6663, customerservice@nycbar.org).</li>
+<li><strong>All other committee-membership listing changes:</strong> <strong>Committee Membership</strong> (committeemembership@nycbar.org).</li>
+</ul></div></details></div><div class="panel"><details><summary>Appointing / Role of the Committee Secretary</summary><div class="panel-body"><ul>
+<li>Before the <strong>September meeting</strong>, the chair should appoint a committee member as secretary and notify <strong>Committee Membership</strong> (committeemembership@nycbar.org). Alternatively, the chair may appoint someone from their firm/organization who is not on the committee — in which case the secretary is a <strong>non-voting</strong> member.</li>
+<li>Secretary responsibilities generally include: keeping attendance and preparing minutes; making draft minutes available promptly (via the committee's City Bar Central Group or by circulating them); emailing final approved minutes to <strong>Nayeli Bautista</strong> (NBautista@nycbar.org) and posting them on City Bar Central; managing the committee's City Bar Central Group; and assisting the chair with administrative tasks such as collecting committee dues and making arrangements with Catering &amp; Meeting Services.</li>
+</ul></div></details></div><div class="panel"><details><summary>Attendance / Removal of a Committee Member</summary><div class="panel-body"><ul>
+<li>A committee seat is <strong>not a firm seat</strong>; members may <strong>not</strong> send a substitute. Membership is an individual, not firm, responsibility, and this preserves confidentiality.</li>
+<li>Attendance should be recorded and included with the minutes.</li>
+<li><strong>By-Law 5.2(10)</strong> authorizes removal of a member with <strong>three unexcused absences</strong> in any committee year.</li>
+<li><strong>By-Law 5.2(11)</strong> authorizes removal of a member or Chair <strong>for cause</strong>. Personal attacks or behavior that significantly impedes committee operations may be cause for removal.</li>
+<li>By-Laws: https://www.nycbar.org/about/governance/association-by-laws</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="committee-organization"><header class="sec-h"><h2>Committee Organization</h2></header><div class="sec-inner"><div class="sec-intro"><p>The committee year begins in <strong>September</strong>. Before or at the first meeting, chairs and secretaries usually: discuss topics/programs for the year; confirm and book the meeting schedule as far in advance as possible; decide on catering; set committee dues (the assessment covering food and beverage costs); and begin forming subcommittees.</p></div><div class="accordion"><div class="panel"><details><summary>Meeting Dates and Room Reservations</summary><div class="panel-body"><ul>
+<li>Prepare a full-year meeting schedule (with catering plans) early — there is heavy demand for rooms among the Association's <strong>~160 committees</strong>.</li>
+<li><strong>Reserve rooms</strong> by emailing schedules to <strong>Linda Kemble</strong> (lkemble@nycbar.org), Catering &amp; Meeting Services.</li>
+<li><strong>Reserve the room before communicating meeting dates to the committee.</strong></li>
+<li>Breakfast or lunch meetings are an option; daytime rooms can be easier to get and breakfast can cost less than dinner.</li>
+<li>The City Bar encourages committees to meet at the City Bar. No City Bar programs may be held at clubs with admission policies known or publicly acknowledged to be discriminatory. Inform Meeting Services of the date and place of any outside meetings.</li>
+</ul></div></details></div><div class="panel"><details><summary>Catering Decisions</summary><div class="panel-body"><ul>
+<li>Many options (breakfast to hot dinner). Full options and prices: Committee Menu PDF <code>&lt;span class="verify" title="menu prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>No alcoholic beverages may be brought onto City Bar premises or taken home after a meeting.</li>
+</ul></div></details></div><div class="panel"><details><summary>Committee Dues Assessments / Committee Dues Program</summary><div class="panel-body"><ul>
+<li>Assess members an amount sufficient to cover food and beverage costs for the year. Each committee sets and collects its own dues (usually via the Secretary or the Chair's appointee).</li>
+<li>A <strong>two-tier assessment</strong> (a lesser amount for public interest and government lawyers) is one way to handle members who can't pay the full amount.</li>
+<li><strong>Recommendation: do not charge law student members</strong> an assessment. Whether affiliates pay is at the chair's discretion.</li>
+<li><strong>Committee Dues Program (via City Bar Finance Department, CommDuesProgram@nycbar.org):</strong> the Finance Department tracks your dues balance with monthly statements posted to City Bar Central. You still receive catering invoices to review. After <strong>10 business days</strong> a catering invoice is considered approved and applied to your balance. You can draw on funds for other appropriate purposes via a check request form: http://documents.nycbar.org/files/committee_dues_check_request_form.pdf</li>
+<li>Members may pay by check (payable to the <strong>New York City Bar</strong>, sent to the secretary/appointee, who forwards checks plus a name/amount list to CommDuesProgram@nycbar.org) or by credit card through the committee's City Bar Central page ("Pay My Committee Dues").</li>
+<li>To join the program, contact the Finance Department (CommDuesProgram@nycbar.org).</li>
+</ul></div></details></div><div class="panel"><details><summary>Stationery</summary><div class="panel-body"><ul>
+<li>Avoid personal, firm, or corporate stationery for committee business; use the City Bar template. Your firm/organization name should not appear unless absolutely necessary.</li>
+<li>Templates: committee with a <strong>Chair</strong> and committee with <strong>Co-Chairs</strong> (downloadable .docx templates provided by the City Bar).</li>
+<li>Questions: <strong>Nayeli Bautista</strong> (NBautista@nycbar.org).</li>
+<li>Letters conveying policy positions must go through the report review and approval process (see Section 7).</li>
+</ul></div></details></div><div class="panel"><details><summary>Minutes</summary><div class="panel-body"><ul>
+<li>Each committee must keep minutes; the Secretary generally records and drafts them.</li>
+<li>Record attendance — list those <strong>present</strong> and those <strong>not present</strong> (not "excused/unexcused"). An excused absence is when the member notifies you with a good reason; an unexcused absence is when the member does not reply to the meeting notice.</li>
+<li>Committee proceedings are confidential — <strong>mark minutes "confidential."</strong></li>
+<li>Send final minutes to <strong>Nayeli Bautista</strong> (NBautista@nycbar.org) and post them in the committee's City Bar Central Group (this notifies your Board Liaison). Committees are urged to share minutes with committees of similar jurisdiction.</li>
+</ul></div></details></div><div class="panel"><details><summary>Committee Communications</summary><div class="panel-body"><p><strong>City Bar Website</strong> — contains program/CLE calendars, reports, membership info, and the Membership and Committee Directory (login required). Login/password help: Membership Office (212-382-6665, membershipservices@nycbar.org).</p>
+<p><strong>Committee Web Pages</strong> — each committee is urged to use its public webpage (committee description; chair's name, email, photo; reports; upcoming programs). This is public-facing — <strong>no confidential materials.</strong> Send content to MHarris@nycbar.org.</p>
+<p><strong>Committee Communities — City Bar Central</strong> — a private online group per committee for documents, report collaboration, between-meeting discussion, roster access, meeting announcements/RSVPs, and private messaging. Only committee members have access — keep the roster current. Help: coordinator-central@nycbar.org.</p>
+<p><strong>Social Media</strong> — follow the City Bar's social media policy.</p></div></details></div><div class="panel"><details><summary>Board Liaisons and Committee Clusters</summary><div class="panel-body"><ul>
+<li>Substantive committees are grouped into <strong>clusters</strong> (e.g., Criminal Law, Litigation) with overlapping jurisdictions. Clusters are not exclusive. Each cluster has a <strong>Board liaison</strong> who helps coordinate work.</li>
+<li>If assigned, the liaison's name appears on the roster and should receive meeting notices, minutes, draft reports, and relevant correspondence.</li>
+<li>Liaisons are <strong>not committee members</strong> and do <strong>not vote</strong>; their names should not appear on any report, product, or attendance list, though they may be listed as a <strong>guest</strong> if they attend.</li>
+<li>In the fall, the liaison convenes the cluster's chairs to encourage cooperation.</li>
+<li>Board liaison assignments list: <code>&lt;span class="verify" title="the posted list is year-specific (e.g., &amp;quot;24-25&amp;quot;); confirm the current assignment on your roster or with staff"&gt;verify current&lt;/span&gt;</code>.</li>
+</ul></div></details></div><div class="panel"><details><summary>Annual Report</summary><div class="panel-body"><ul>
+<li>By the Chair's annual meeting with the President (generally <strong>late spring</strong>), the Chair submits a brief annual report summarizing the year's activities and next year's plans. If outgoing, the incoming chair prepares the next-year plans.</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="committee-meetings"><header class="sec-h"><h2>Committee Meetings</h2></header><div class="sec-inner"><div class="sec-intro"><p>Meetings are where ideas are generated. Remind members that all meetings are <strong>confidential</strong> and that they leave their "client hats" at the door. Mix working sessions and guest speakers; consider joint meetings; involve new lawyers.</p></div><div class="accordion"><div class="panel"><details><summary>Notice of Meetings</summary><div class="panel-body"><ul>
+<li>Send members a full list of meeting dates at the start of the year and follow up with calendar invites; dates can also be posted on City Bar Central.</li>
+<li><strong>Committee Management page → "Committee Email Addresses"</strong> provides a copy-paste list of member emails that stays synced with the membership database.</li>
+<li><strong>City Bar Central</strong> can send notices and gather RSVPs via a poll, and dates can be added to the group calendar. Help: coordinator-central@nycbar.org.</li>
+<li><strong>Communicate your final headcount to Catering &amp; Meeting Services at least two business days before the meeting.</strong></li>
+</ul></div></details></div><div class="panel"><details><summary>Food / Beverages at Meetings</summary><div class="panel-body"><ul>
+<li>Many options; see the Committee Menu PDF <code>&lt;span class="verify" title="prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>No alcoholic beverages may be brought onto premises or taken home.</li>
+</ul></div></details></div><div class="panel"><details><summary>Billing Procedures</summary><div class="panel-body"><ul>
+<li>If food/beverage is served, the chair or designee (usually the secretary) receives a bill about <strong>one week</strong> after the meeting. <strong>Pay within 10 days.</strong> Billing questions: Meeting Services Department.</li>
+<li>Committees in the <strong>Committee Dues Program</strong> receive invoice copies to review; after 10 days the amount is deducted from the Committee Dues Account.</li>
+<li>Committees <strong>in arrears over 90 days</strong> may be unable to receive food or beverages until the debt is satisfied.</li>
+</ul></div></details></div><div class="panel"><details><summary>Request for Audio/Visual Equipment at Meetings</summary><div class="panel-body"><ul>
+<li>Contact <strong>Linda Kemble</strong> (lkemble@nycbar.org, 212-382-6653) at least <strong>three days</strong> prior to your meeting to arrange audio/visual equipment.</li>
+<li>Available equipment inventory includes: 60"×90" screen; 96"×96" screen; conference phone; VCR; TVs; laptop; DVD and Blu-Ray player; audio taping; slide projector(s); data projector; corporate easels with pads; document camera; overhead projector(s).</li>
+</ul></div></details></div><div class="panel"><details><summary>Conduct at Meetings</summary><div class="panel-body"><ul>
+<li>Meetings should be a civil, professional, inclusive environment welcoming a diversity of ideas, with all members acting respectfully. See the City Bar Member and Visitor Conduct Policy.</li>
+</ul></div></details></div><div class="panel"><details><summary>Confidentiality of Meetings</summary><div class="panel-body"><ul>
+<li>All committee meetings are confidential. Disclosing the views of individual members, or positions being considered, violates the rights of the committee and its members (except as noted in Section 7).</li>
+<li>Meetings — particularly committee business and discussion — should <strong>not be recorded or taped.</strong></li>
+</ul></div></details></div><div class="panel"><details><summary>Guests at Committee Meetings (Gift-Law Rules for Government Officials)</summary><div class="panel-body"><p>New York law strictly bans gifts to <strong>New York State</strong> government officials and officials of <strong>New York municipalities with populations of 50,000 or more</strong>, with limited exceptions. Providing a meal to State officials is banned, with these relevant exceptions:</p>
+<ul>
+<li><strong>Widely attended event:</strong> complimentary attendance/food/beverage offered by the sponsor, where at least <strong>25 individuals</strong> other than members/officers/employees of the official's governmental entity attended or were invited in good faith, <strong>and</strong> the event relates to the attendee's duties (which includes attending an event where a speaker/attendee addresses an issue of public interest as a significant activity; or, for elected officials or their staff, an event where more than half of those attending/invited are residents of the jurisdiction the official represents).</li>
+<li><strong>Meals/refreshments</strong> when participating in a professional or educational program and provided to <strong>all</strong> participants.</li>
+<li><strong>Food or beverage valued at $15 or less.</strong> </li>
+</ul>
+<p>Do not offer or agree to reimburse expenses of New York State or local government officials. This rule does <strong>not</strong> apply to Federal officials. Questions, or before inviting a state/local official: <strong>Mary Margulis-Ohnuma</strong>, Senior Policy Counsel (212-382-6767, mmargulis-ohnuma@nycbar.org).</p></div></details></div><div class="panel"><details><summary>Meetings Held Outside the City Bar</summary><div class="panel-body"><ul>
+<li>No City Bar meeting may be held at clubs with admission policies known or publicly acknowledged to be discriminatory. Inform the Meeting Services Department of the date and place of any outside meeting.</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="committee-finances"><header class="sec-h"><h2>Committee Finances</h2></header><div class="sec-inner"><div class="sec-intro"><p>Committee dues cover food and beverage costs for the year. <strong>The amount committees set varies widely, from $20 to $400</strong>, depending on food service. <code>&lt;span class="verify" title="this range is descriptive of past practice; treat as a guide, not a fixed rule."&gt;verify current&lt;/span&gt;</code> Many committees also use dues for gifts for members rotating off, end-of-year events, or defraying the cost of a guest speaker.</p></div><div class="accordion"><div class="panel"><details><summary>Dues Assessments / Accounts with the City Bar</summary><div class="panel-body"><ul>
+<li>(Same assessment guidance as Section 2: assess to cover costs; two-tier option for public interest/government lawyers; recommend law students not be charged; affiliate assessments at discretion.)</li>
+<li>Each committee sets and collects its own dues; these may be sent to the City Bar, which will maintain a dues account per committee.</li>
+<li>Checks payable to the <strong>New York City Bar</strong>, sent to the secretary/appointee, who forwards them with a name/amount list to the Finance Department (CommDuesProgram@nycbar.org). Members may also pay by credit card through City Bar Central.</li>
+<li>If the City Bar maintains your account: monthly statements posted to City Bar Central; you still receive catering invoices to review; after <strong>10 business days</strong> an invoice is applied to your balance; funds can be drawn via the check request form.</li>
+</ul></div></details></div><div class="panel"><details><summary>Fund Raising</summary><div class="panel-body"><ul>
+<li>Committees increasingly seek outside funding for programs and projects. All funding efforts go through the <strong>Association of the Bar of the City of New York Fund, Inc. (City Bar Fund)</strong> — a <strong>501(c)(3)</strong> organized in <strong>1946</strong>, eligible for tax-exempt contributions.</li>
+<li><strong>Discuss with Bret Parker before any outside funders are contacted.</strong></li>
+<li>The City Bar Fund's largest public service program is the <strong>City Bar Justice Center</strong> (annually serves ~25,000 low-income New Yorkers; includes the Neighborhood Entrepreneur Law Project). The Fund also includes the <strong>Vance Center for International Justice</strong>, the <strong>Lawyer Assistance Program</strong>, and the <strong>Office for Diversity &amp; Inclusion</strong>.</li>
+<li>Project proposals should include an <strong>administrative fee</strong> covering the Fund's estimated costs. Funds are held as restricted funds. Grantor checks payable to the <strong>City Bar Fund</strong>. Once raised, submit receipts/bills approved and signed by the committee chair to Bret Parker for payment.</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="public-service-projects"><header class="sec-h"><h2>Public Service Projects</h2></header><div class="sec-inner"><div class="sec-intro"><p>Committees are encouraged to undertake public service projects (educational videos or booklets, public information programs, training lawyers or lay advocates, school relationships, or serving a needy population). The <strong>Public Service Committee of the New Lawyer Council</strong> creates opportunities to give back and may partner with other committees. To plan a project or get routed appropriately: <strong>Martha Harris</strong> (mharris@nycbar.org, 212-382-6607).</p></div></div></section>
+<section class="section" id="committee-reports-policy-recommendations-and-advocacy"><header class="sec-h"><h2>Committee Reports, Policy Recommendations and Advocacy</h2></header><div class="sec-inner"><div class="sec-intro"><p>One way the City Bar pursues its mission is through committee <strong>"reports"</strong> — comments on legislation, letters to officials, amicus briefs, and similar work product. For process details, see the sections below, the City Bar's overview on public statements, the Issues &amp; Policy page, or the <strong>Policy Department</strong>.</p></div><div class="accordion"><div class="panel"><details><summary>Drafting a Committee Report</summary><div class="panel-body"><p><strong>Types of reports</strong> — any written product is governed by the report review process, including amicus briefs, letters to officials, legislative reports, public comments, hearing testimony, policy recommendations, surveys, FOIL requests, op-eds, and questionnaires.</p>
+<p><strong>Prior positions</strong> — before starting, check whether the City Bar has a prior position (the Committee Reports section of the website holds at least ~15 years; the Policy Department or Library can check older records). A subsequent report <strong>cannot take a different position</strong> absent a compelling reason. An existing position can be reevaluated with significant new data or changed circumstances, but the <strong>then-sitting President must approve any change in position.</strong> Committees are encouraged to update and reissue past reports (especially on legislation); reissued reports don't need re-approval provided no significant position changes — coordinate with the Policy Department.</p>
+<p><strong>Amicus briefs</strong> — go through the same vetting/approval as any report. Because they're time-intensive and may favor a party, <strong>submit an outline or summary of proposed arguments for Policy Department review and President approval before beginning substantive work.</strong> Amicus briefs often require an appellate printing service. Cost-saving steps: ask whether a committee member's firm can cover printer costs; secure a pro bono/nonprofit printer discount; discuss timing to avoid rush fees; and create the cover page, Table of Contents, and Table of Authorities yourself. If the committee cannot fund it and needs the City Bar to pay, submit a written request with a written estimate (reflecting the discount) <strong>before</strong> engaging the printer.</p>
+<p><strong>Consultation with other committees</strong> — inform chairs of other interested committees early (consulting your cluster is a good start). Joint reports strengthen impact. Note any committees consulted on the Report Intake Form. If the Policy Department/President determine another committee should review, it will be sent for written comment. Disputes are resolved by the President, appealable to the Board (By-Law 5.4.7).</p>
+<p><strong>Content and formatting</strong> — aim for well-balanced, well-supported, thoughtful work meeting the City Bar's standards. Use the City Bar <strong>Style Guide</strong> and check/date all citations. All reports are ultimately reviewed and finalized by the Policy Department before publishing.</p>
+<p>Report Intake Form: https://services.nycbar.org/Members/Upload_Report/Members/Committee_Reports/Submit_Report.aspx</p></div></details></div><div class="panel"><details><summary>Confidentiality of Committee Deliberations on Policy Issues</summary><div class="panel-body"><p>Board resolution: <em>"Deliberations at committee meetings are normally understood by the committee members to be part of the process of reaching conclusions and are not intended for public disclosure of any kind. At the same time, the subjects being discussed at committee meetings are frequently issues of public concern which are not better resolved in a total vacuum. Some exposure to the outside world of the subjects being discussed within the committee is likely to result in a better conclusion. Committees are free to and are encouraged to seek outside views, but such efforts should not be made without the express approval of the chair of the committee or of the committee as a whole. Moreover, even with such approval, the disclosure of the views of individual members of the committee, or of positions being considered by the committee, is a violation of the rights of the committee and committee members, and is inconsistent with the fact that City Bar positions should be publicly announced only in accordance with the procedures set out in the by-laws."</em></p>
+<p>All conclusions, recommendations, or reports must remain confidential until approved by the President for publication. All drafts must be clearly marked on the first page with this exact language:</p>
+<blockquote>
+<p><em>"The following is a draft report, not an approved position of the Committee or the New York City Bar, and is not intended for distribution outside the City Bar."</em></p>
+</blockquote>
+<p>To circulate a draft outside the City Bar for review, contact the Policy Department.</p></div></details></div><div class="panel"><details><summary>Reaching Decisions on Committee Positions</summary><div class="panel-body"><ul>
+<li>Avoid significant action with few members present or on a closely divided vote. A report should not be advanced to the President without the affirmative vote of <strong>at least one more than half the voting membership, including the chair(s).</strong></li>
+<li>Polling absent members is acceptable, but such a poll should not be used to <strong>reverse</strong> a decision made at a meeting.</li>
+<li>Electronic voting (email, conference call, video) is allowed, but chairs should avoid relying on an email vote for a topic not discussed at a meeting if there is significant dissent.</li>
+</ul>
+<p><strong>Individual conflicts</strong> — members leave their clients' hats at the door; nothing in reports is attributed to an employer or client. If a member has an immediate, direct, or significant interest (e.g., involvement in related litigation, a regulatory proceeding, or lobbying), they <strong>must disclose</strong> the conflict to the committee (without disclosing privileged/confidential detail), and may be required to <strong>recuse</strong>. Whether recusal/abstention is required is case-by-case; even if not recused from discussion/drafting, a conflicted member should abstain from the approval vote if participation could be perceived as self-interested. The report intake form asks whether this section was complied with and the names of any who recused/abstained. Committees should also be mindful of <strong>Rule 6.4</strong> of the New York Rules of Professional Conduct:</p>
+<blockquote>
+<p><em>"A lawyer may serve as a director, officer or member of an organization involved in reform of the law or its administration, notwithstanding that the reform may affect the interests of a client of the lawyer. When the lawyer knows that the interests of a client may be materially benefitted by a decision in which the lawyer actively participates, the lawyer shall disclose that fact to the organization, but need not identify the client. In determining the nature and scope of participation in such activities, a lawyer should be mindful of obligations to clients under other Rules, particularly 1.7."</em></p>
+</blockquote>
+<p>(Rule 1.7 addresses conflicts involving current clients.)</p></div></details></div><div class="panel"><details><summary>Working With Other Organizations — Reports and Coalitions</summary><div class="panel-body"><ul>
+<li>In general, the City Bar does <strong>not</strong> sign onto work prepared by another entity or formally join coalitions/campaigns, because doing so cedes its name and limits the President's authority. Exceptions exist — contact the Policy Department.</li>
+<li><strong>Joining a coalition:</strong> the City Bar can work in tandem with a coalition without formally joining. After an approved position exists, the Director of Advocacy may coordinate with others and amplify a campaign's work.</li>
+<li><strong>Sign-on / form letters:</strong> a committee cannot substantially adapt another org's document and issue it as a City Bar report; write an independent report with appropriate attribution. To add support to another org's position, write a letter acknowledging it with a brief explanation of support. A form letter/report must acknowledge and identify the source organization.</li>
+<li><strong>Joint reports</strong> are permitted if the committee is substantively involved in drafting and it's approved by the committee and the President (reflect all authors/logos).</li>
+<li><strong>Rare exception:</strong> signing onto a joint statement without participating in drafting requires that the City Bar already have a consistent approved position and the President's approval.</li>
+</ul></div></details></div><div class="panel"><details><summary>Finalizing and Required Pre-Publication Clearance</summary><div class="panel-body"><ul>
+<li><strong>By-Law 5.4</strong> governs approval. Before release of any report — or any written/oral communication presenting the committee's conclusions or recommendations on a substantive matter — it <strong>must be approved by the President.</strong> Circulating a draft outside the City Bar for review also requires President approval first.</li>
+<li>Submit approved reports in <strong>Word format</strong> through the online Report Intake Form. The Policy Department coordinates any required committee/President review. If the President disapproves, committees may appeal to the Board (By-Law 5.4). President-approved reports are official City Bar positions.</li>
+</ul></div></details></div><div class="panel"><details><summary>Report Distribution, Promotion and Advocacy</summary><div class="panel-body"><ul>
+<li>Approved reports are posted on the City Bar website; committees are encouraged to share via professional networks and social media.</li>
+<li>The Policy Department helps prepare targeted distribution (identifying legislators, officials, other bar associations). Note distribution requests on the Report Intake Form. Consult the Policy Department before distributing, especially for ongoing advocacy or proposed legislation.</li>
+<li>The City Bar holds <strong>copyright</strong> on committee work product and the <strong>right of first refusal</strong> on publication. For an outside publication to reprint a report, contact the City Bar's <strong>General Counsel</strong> for permission.</li>
+<li><strong>Advocacy support</strong> may include developing an advocacy plan and publicity, communicating views to policymakers, tracking legislation, arranging lobby visits, partnering with other organizations, convening roundtables, and seeking legislative sponsors.</li>
+</ul></div></details></div><div class="panel"><details><summary>Publicity / Media Relations</summary><div class="panel-body"><ul>
+<li>Work with the <strong>Communications Department</strong> on media strategy; complete the Report Intake Form and provide reporter/publication names. Contact Communications early for significant coverage.</li>
+<li><strong>Op-eds</strong> up to <strong>750 words</strong>; <strong>letters to the editor</strong> up to <strong>250 words</strong>. Both must be <strong>approved by the President</strong>, even about approved positions. Press releases, op-eds, and letters are released only from/with the supervision of Communications.</li>
+<li>Committee chairs (or designees) are expected to be available to the press on committee reports and subjects within the committee's expertise.</li>
+<li><strong>Attribution when speaking to media:</strong> on a report or official position — "Chair or member of the New York City Bar's Committee on ……"; for general background — may be identified with the City Bar; giving an opinion where the City Bar has <strong>no</strong> official position — speak as an individual, <strong>without</strong> City Bar affiliation. A chair/member writing in their own name (not as chair/member) should not identify a City Bar affiliation.</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="committee-events-cle-programs-and-awards"><header class="sec-h"><h2>Committee Events, CLE Programs, and Awards</h2></header><div class="sec-inner"><div class="accordion"><div class="panel"><details><summary>Events</summary><div class="panel-body"><h3>Reservations and Program Approval</h3>
+<ul>
+<li>Contact the Program Department <strong>as early as possible — ideally no later than 12 weeks before</strong> the anticipated date, earlier if possible.</li>
+<li>Request a date via the <strong>Event Reservation Request Form</strong>: https://services.nycbar.org/Members/Event_Reservation_Form/Members/Upload_Event_Form.aspx . The Program Department reviews/approves content, then books a date.</li>
+<li>When choosing dates, avoid days of religious observance and days of awareness, and be mindful of members' scheduling. <code>&lt;span class="verify" title="the handbook links to year-specific date lists (2024/2025); use a current-year source and confirm with the Program Department."&gt;verify current&lt;/span&gt;</code></li>
+<li>Specific rooms cannot be guaranteed.</li>
+<li><strong>Avoid hybrid</strong> — hold programs either fully in person or fully virtual (given a choice, many attendees pick virtual, leaving a sparse in-person audience).</li>
+<li>Contacts: <strong>Martha Harris</strong>, Senior Director of Programs (mharris@nycbar.org); <strong>Nayeli Bautista</strong>, Program Coordinator (NBautista@nycbar.org).</li>
+</ul>
+<h3>Event Information</h3>
+<ul>
+<li>After approval/booking, the organizer/chair receives deadlines and instructions and completes the <strong>Event Description and Marketing Form</strong>: https://services.nycbar.org/Members/Marketing_Event_Intake.aspx — <strong>at least 8 weeks prior</strong> to the event.</li>
+<li><strong>At least two confirmed speakers</strong> per program; all moderators/speakers must be confirmed before submitting. <strong>No "TBA" or "Invited" placeholders.</strong></li>
+<li>Edits to a calendared event, or cancellations/reschedules: notify <strong>Nayeli Bautista</strong> (NBautista@nycbar.org) immediately.</li>
+</ul>
+<h3>Identifying Panelists</h3>
+<ul>
+<li>Chairs may prefer active committee members and NYC Bar members as program chair(s)/speakers; vary chairs/speakers year to year on repeated programs. All attorney speakers must be in good standing in their admitting jurisdiction.</li>
+<li>Panels must reflect diversity, including historically underrepresented groups, gender diversity, LGBTQ+, and persons with disabilities, and must present a balanced view with differing viewpoints.</li>
+<li><strong>Speaker travel:</strong> transportation reimbursement for out-of-town speakers is <strong>discouraged</strong>; limited funds may be available when no NY-based speaker is available. Request from <strong>Martha Harris</strong> (mharris@nycbar.org, 212-382-6607); <strong>approval required before offering</strong> reimbursement; attach receipts.</li>
+<li>The NY State Lobbying Act (§1-c(j)(ix)) does <strong>not</strong> permit reimbursing travel/hotel for City or State public officials attending/speaking. Federal officials may have their own restrictions.</li>
+</ul>
+<h3>Event and Reception Timing</h3>
+<ul>
+<li>Non-CLE events are usually <strong>1–2 hours</strong>. Receptions typically run <strong>30 minutes to 1 hour</strong> and may be held before or after the program.</li>
+<li>Plan early for how a reception's cost is covered (attendee fees or sponsorship).</li>
+<li><strong>All programs and receptions should end no later than 8:30 pm</strong>, unless an exception is approved by <strong>Martha Harris</strong>. A reception won't automatically be extended if the program runs long — begin and end on time.</li>
+</ul>
+<h3>Co-sponsorships with Other Committees</h3>
+<ul>
+<li>Invite committees with related jurisdiction to co-sponsor. The Program Office can suggest co-sponsors and make introductions. The sponsoring committee coordinates each co-sponsor's participation.</li>
+<li>A co-sponsor should actively help maximize attendance (encourage its members, share lists, email invitations, help obtain speakers) — not just lend its name.</li>
+</ul>
+<h3>Charging for Events</h3>
+<p>Pricing for <strong>non-CLE</strong> events <code>&lt;span class="verify" title="fees change; confirm current amounts with Martha Harris, mharris@nycbar.org"&gt;verify current&lt;/span&gt;</code>:
+- <strong>No food/beverage:</strong> members free; non-members <strong>$20</strong>.
+- <strong>With food/beverage or other expenses:</strong> members pay a fee substantially lower than non-members; the City Bar helps set member/non-member fees based on expenses.
+- <strong>Virtual programs:</strong> members free; non-members <strong>$20</strong> (unless approved otherwise).
+- Fees are collected via web registration. Revenue in excess of expenditures goes to general use for City Bar committee programs and work product.</p>
+<h3>Sponsorship from Foundations and Non-Profit Organizations</h3>
+<ul>
+<li>Consult with the City Bar <strong>before</strong> approaching potential funders (to avoid conflicts and discuss grant restrictions/conditions).</li>
+</ul>
+<h3>Sponsorship from For-Profit Entities</h3>
+<ul>
+<li>Consult <strong>Martha Harris</strong> (mharris@nycbar.org, 212-382-6607) before approaching sponsors.</li>
+<li>A program should not be sponsored by a single for-profit entity — <strong>minimum two sponsors, ideally three</strong>, from the private sector.</li>
+<li>Sponsors may be acknowledged in the calendar listing, marketing emails, a day-of handout, and orally during the event.</li>
+<li>Excess revenue goes to the Association for general use (and may, at the Association's discretion, be donated to City Bar Fund programs).</li>
+<li>The NYC Bar Association is a <strong>501(c)(6)</strong> organization; <strong>sponsorships are not tax-deductible</strong> charitable contributions.</li>
+</ul>
+<h3>Event Publicity</h3>
+<ul>
+<li>The City Bar uses email notices (to relevant committees and interested members), the web calendar, the <strong>44th Street eNews</strong>, and social media. Provide any specialized lists.</li>
+<li>The most effective driver is direct outreach by committee members — distributing flyers/notices at firms and to contacts, and promoting on social media.</li>
+</ul>
+<h3>Video Recording Programs / Releases</h3>
+<ul>
+<li>Events can be recorded in the Meeting Hall and most spaces; <strong>submit requests to the Program Office at least two weeks in advance.</strong> Fee: <strong>$75 per hour, minimum 4 hours</strong> <code>&lt;span class="verify" title="confirm current fee with the Program Office"&gt;verify current&lt;/span&gt;</code>.</li>
+<li><strong>Virtual programs are recorded at no cost.</strong></li>
+<li>To post audio/video (podcast/recording) or give it to speakers, the committee must obtain <strong>signed speaker releases</strong> and submit them to the Program Department. Get releases in advance. Release form: https://fs26.formsite.com/nycbarassoc/recording-release-progs/index.html</li>
+</ul>
+<h3>Tips for Presenting on a Virtual Platform</h3>
+<p>Practical guidance: fully charge devices and keep power nearby; use a wired internet connection if possible; test video/audio at zoom.us/test; use headphones/earphones and, if possible, a good camera/headset; mute when not speaking; set up in a quiet, well-lit place; turn video on; use a simple/virtual background; light yourself from the front; keep the camera at eye level and frame from the chest up; look at the camera; and engage the audience with polls (send poll questions in advance), screen sharing, and Q&amp;A.</p>
+<h3>Programs Held Outside the City Bar</h3>
+<ul>
+<li>Must be notified to and approved by <strong>Martha Harris</strong> (mharris@nycbar.org). No program may be held at clubs with discriminatory admission policies.</li>
+</ul></div></details></div><div class="panel"><details><summary>CLE Programs</summary><div class="panel-body"><h3>Program Approval</h3>
+<ul>
+<li>The City Bar encourages committees to develop CLE programs — basic 101 introductions, updates for experienced practitioners, or hands-on skills training. Because CLE is required for New York attorneys, programs offering credit are an important member benefit. <strong>Any program offering CLE credit must be planned and approved in coordination with the Program Department.</strong></li>
+<li><strong>Planning steps:</strong> (1) contact the Program Department with your idea to discuss whether CLE credit fits; (2) complete the <strong>CLE Proposal Form</strong> (https://services.nycbar.org/Members/CLE_Program_Questionnaire/Members/CLE/Upload_Program_Questionnaire.aspx) for staff review and approval; (3) once approved, choose a date — CLE programs are generally scheduled <strong>4–6 months in advance</strong>, conferences typically <strong>about one year in advance</strong>, with shorter timelines accommodated for timely topics; (4) staff will flag similar recent/planned programs and suggest co-sponsors; (5) identify and confirm speakers, and develop the agenda early; (6) work with City Bar staff, who handle space/catering, promotion, materials, registration, evaluations, CLE credit determination and certificates, and required State CLE Board filings.</li>
+<li>Contacts: <strong>Martha Harris</strong> (212-382-6607, mharris@nycbar.org) or <strong>Gregory Binstock</strong> (212-382-6763, gbinstock@nycbar.org).</li>
+</ul>
+<h3>Co-sponsorship of CLE Programs</h3>
+<ul>
+<li>With <strong>committees:</strong> identify committees sharing subject-matter jurisdiction during planning; staff may suggest co-sponsors.</li>
+<li>With <strong>outside organizations:</strong> considered, but must be organized and agreed to by the Director of Programs.</li>
+</ul>
+<h3>Marketing and Advertising CLE Programs</h3>
+<ul>
+<li>The Program Office needs the sponsoring committee's help: encourage member/colleague attendance and suggest publications, associations, and contact lists to advertise to.</li>
+</ul>
+<h3>Written Materials for CLE Programs</h3>
+<p>Per the State CLE Board's regulations: materials must be <strong>prepared or compiled specifically</strong> for the program and <strong>address each topic presented</strong>; must reflect that they are timely or updated with specific reference to the program; and must be comprehensive and professional. <strong>Brief outlines without citations or explanatory notations will not suffice.</strong> The Program Office may edit/supplement, in consultation with the committee.</p>
+<h3>Releases for CLE Speakers</h3>
+<ul>
+<li>Submit speaker names, titles, addresses, and phone numbers as early as possible so staff can secure the releases needed to audio/videotape and distribute materials.</li>
+</ul>
+<h3>Fees for CLE Programs</h3>
+<ul>
+<li>The City Bar reserves the right to set all CLE program fees.</li>
+</ul>
+<h3>City Bar Center Accreditations</h3>
+<ul>
+<li>The City Bar is a CLE accredited provider in <strong>New York</strong> for live, live streamed, and on-demand programming, and a <strong>fully accredited provider in California, New Jersey, and Pennsylvania</strong>.</li>
+</ul>
+<h3>CLEs On-Demand</h3>
+<ul>
+<li>Most CLE programs are recorded and placed online for on-demand viewing for approximately <strong>two years</strong>.</li>
+</ul>
+<h3>Co-sponsorship of Programs with Other Organizations</h3>
+<ul>
+<li>Committees may work with other organizations, law schools, and student organizations, but only co-sponsor if the committee is <strong>substantially involved</strong> in developing the program. Questions: Martha Harris.</li>
+</ul></div></details></div><div class="panel"><details><summary>Awards</summary><div class="panel-body"><h3>Establishing an Award / Award Proposals</h3>
+<ul>
+<li>To recognize an individual's contributions, a committee may establish an award — but must first <strong>submit a proposal to the City Bar for approval.</strong> The proposal must state: the proposed <strong>name</strong>, the <strong>purpose</strong>, the <strong>nomination criteria and process</strong>, the <strong>selection criteria and process</strong>, <strong>funding</strong>, and <strong>recurrence.</strong></li>
+<li>Full details: <strong>Committee Awards Policy</strong> (https://www2.nycbar.org/Committees/Handbook/docs/Committee-Awards-Policy.pdf).</li>
+</ul></div></details></div></div></div></section>
+<section class="section" id="contact-directory"><header class="sec-h"><h2>Contact Directory (Quick Reference)</h2></header><div class="sec-inner"><div class="sec-intro"><table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Contact</th>
+<th>Email / Phone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Committee membership, rosters, appointments, affiliate/adjunct/law-student members, secretary appointment, Committee Management page</td>
+<td>Committee Membership</td>
+<td>committeemembership@nycbar.org</td>
+</tr>
+<tr>
+<td>Difficulty filling vacancies</td>
+<td>Martha Harris or Committee Membership</td>
+<td>mharris@nycbar.org · 212-382-6607</td>
+</tr>
+<tr>
+<td>Change of address / phone / email</td>
+<td>Customer Relations Department</td>
+<td>customerservice@nycbar.org · 212-382-6663</td>
+</tr>
+<tr>
+<td>Meeting rooms, catering, AV equipment reservations, catering billing questions</td>
+<td>Linda Kemble, Manager of Conference Services</td>
+<td>lkemble@nycbar.org · 212-382-6653</td>
+</tr>
+<tr>
+<td>Committee Dues Program, invoices, account setup</td>
+<td>City Bar Finance Department</td>
+<td>CommDuesProgram@nycbar.org</td>
+</tr>
+<tr>
+<td>Final minutes; stationery templates; event edits/cancellations; program coordination</td>
+<td>Nayeli Bautista, Program Coordinator</td>
+<td>NBautista@nycbar.org</td>
+</tr>
+<tr>
+<td>City Bar Central help</td>
+<td>City Bar Central Coordinator</td>
+<td>coordinator-central@nycbar.org</td>
+</tr>
+<tr>
+<td>Login / password / member directory</td>
+<td>Membership Office</td>
+<td>membershipservices@nycbar.org · 212-382-6665</td>
+</tr>
+<tr>
+<td>Inviting state/local officials; gift-law questions</td>
+<td>Mary Margulis-Ohnuma, Senior Policy Counsel</td>
+<td>mmargulis-ohnuma@nycbar.org · 212-382-6767</td>
+</tr>
+<tr>
+<td>Fundraising / City Bar Fund / outside funders (contact before approaching any funder)</td>
+<td>Bret Parker</td>
+<td>(per handbook)</td>
+</tr>
+<tr>
+<td>Reports, prior positions, amicus, advocacy, distribution</td>
+<td>Policy Department</td>
+<td>nycbar.org Issues &amp; Policy / Policy Department page</td>
+</tr>
+<tr>
+<td>Reprint permission for committee reports</td>
+<td>General Counsel</td>
+<td>(per handbook)</td>
+</tr>
+<tr>
+<td>Programs, public service projects, sponsorships, speaker travel, web-page content, programs outside the City Bar</td>
+<td>Martha Harris, Senior Director of Programs</td>
+<td>mharris@nycbar.org · 212-382-6607</td>
+</tr>
+<tr>
+<td>CLE program questions / planning</td>
+<td>Martha Harris or Gregory Binstock</td>
+<td>gbinstock@nycbar.org · 212-382-6763</td>
+</tr>
+<tr>
+<td>Media, publicity, op-eds, podcasts</td>
+<td>Communications Department</td>
+<td>nycbar.org/media</td>
+</tr>
+</tbody>
+</table></div></div></section>
+<section class="section" id="key-forms-and-links"><header class="sec-h"><h2>Key Forms and Links (functional)</h2></header><div class="sec-inner"><div class="sec-intro"><ul>
+<li><strong>Report Intake Form:</strong> https://services.nycbar.org/Members/Upload_Report/Members/Committee_Reports/Submit_Report.aspx</li>
+<li><strong>Event Reservation Request Form:</strong> https://services.nycbar.org/Members/Event_Reservation_Form/Members/Upload_Event_Form.aspx</li>
+<li><strong>Event Description and Marketing Form:</strong> https://services.nycbar.org/Members/Marketing_Event_Intake.aspx</li>
+<li><strong>CLE Proposal Form:</strong> https://services.nycbar.org/Members/CLE_Program_Questionnaire/Members/CLE/Upload_Program_Questionnaire.aspx</li>
+<li><strong>Committee Dues check request form:</strong> http://documents.nycbar.org/files/committee_dues_check_request_form.pdf</li>
+<li><strong>Recording release form:</strong> https://fs26.formsite.com/nycbarassoc/recording-release-progs/index.html</li>
+<li><strong>Association By-Laws:</strong> https://www.nycbar.org/about/governance/association-by-laws</li>
+<li><strong>Committee Reports Style Guide:</strong> https://www.nycbar.org/wp-content/uploads/2024/08/committeereportsstyleguide.pdf</li>
+<li><strong>Committee Reports archive:</strong> https://www.nycbar.org/reports/</li>
+<li><strong>Full committee list:</strong> https://www.nycbar.org/committees/</li>
+<li><strong>Committee Awards Policy:</strong> https://www2.nycbar.org/Committees/Handbook/docs/Committee-Awards-Policy.pdf</li>
+<li><strong>Committee Menu (catering) PDF</strong> — <code>&lt;span class="verify" title="prices"&gt;verify current&lt;/span&gt;</code></li>
+<li><strong>Board Liaison assignments PDF</strong> — <code>&lt;span class="verify" title="year-specific"&gt;verify current&lt;/span&gt;</code></li>
+</ul></div></div></section>
+</main>
+
+<footer>© New York City Bar Association &middot; Committee Handbook</footer>
+
+<button class="launcher" onclick="openCW()" aria-label="Ask the Committee Handbook assistant">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  Ask the Handbook
+</button>
+
+<div class="cw" id="cw">
+  <div class="cw-h"><div class="t">Committee Handbook Assistant<small>New York City Bar Association</small></div><div class="actions"><button class="cw-new" onclick="newChat()">New chat</button><button class="cw-x" onclick="closeCW()" aria-label="Close">&times;</button></div></div>
+  <div class="cw-disc">Internal test build — live answers, grounded in the full handbook. Not connected to production.</div>
+  <div class="cw-key">
+    <input id="cwKey" type="password" placeholder="Anthropic API key (sk-ant-...)" autocomplete="off">
+    <button id="cwKeyBtn" onclick="useKey()">Use key</button>
+    <span class="cw-keystatus" id="cwKeyStatus">No key set</span>
+  </div>
+  <div class="cw-body" id="cwBody"></div>
+  <div class="cw-foot"><input id="cwIn" type="text" placeholder="Ask a question…" autocomplete="off"><button id="cwSend" onclick="cwSubmit()">Send</button></div>
+</div>
+
+<script>
+  const STARTER_CHIPS=[
+    "How many voting members can a committee have?",
+    "Who do I contact to reserve a meeting room?",
+    "Who appoints the committee secretary?",
+    "What's the fee for a virtual program?"
+  ];
+  const HANDBOOK_URL="handbook.md";
+  const MODEL="claude-sonnet-4-6";
+  const RULES_PREFIX=`You are the NYC Bar Committee Handbook Assistant, used by committee chairs and secretaries across the City Bar's roughly 160 committees.
+
+RULES (follow strictly):
+1. Answer ONLY using the Committee Handbook content provided below. Never invent, assume, or infer facts, names, numbers, deadlines, or policies not explicitly stated in the handbook text.
+2. If the handbook names a specific staff contact for the topic, include that contact (name, email, and phone if given) at the end of your answer.
+3. If a question touches committee reports, By-Laws, report approval, confidentiality of deliberations, amicus briefs, coalitions/sign-ons, advocacy, testimony, legislation, or op-eds, do NOT answer the substance yourself. Say this goes to the Policy Department, and note that reports go through the online Report Intake Form and require President approval before release.
+4. If the question is not covered by the handbook at all, say plainly that this isn't in the handbook, and do not guess or fabricate a contact.
+5. Be concise, professional, and accurate \u2014 this is a professional audience of committee leaders. Use **bold** sparingly for key terms, matching the style of this widget's earlier sample answers. Keep answers short; this is a chat widget, not a document.
+
+COMMITTEE HANDBOOK CONTENT:
+---
+`;
+  const RULES_SUFFIX="\n---\nEnd of handbook content. Answer strictly from the above.";
+
+  let busy=false, apiKey="", systemPrompt=null, handbookError=null, history=[];
+  const body=document.getElementById("cwBody"),input=document.getElementById("cwIn"),sendBtn=document.getElementById("cwSend");
+  const keyInput=document.getElementById("cwKey"),keyBtn=document.getElementById("cwKeyBtn"),keyStatus=document.getElementById("cwKeyStatus");
+
+  function openCW(){document.getElementById("cw").classList.add("open");input.focus();}
+  function closeCW(){document.getElementById("cw").classList.remove("open");}
+  function esc(t){return t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function fmt(t){let x=esc(t);
+    x=x.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+    x=x.replace(/(^|[^">])((?:[\w.+-]+)@(?:[\w-]+\.)+[\w-]+)/g,'$1<a href="mailto:$2">$2</a>');
+    return x.replace(/\n/g,"<br>");}
+  function renderEmpty(){
+    const chips=STARTER_CHIPS.map(q=>'<button class="cw-chip" onclick="quick(this)">'+esc(q)+'</button>').join("");
+    body.innerHTML='<div class="cw-empty">Ask a question about running a City Bar committee.<div class="cw-chips">'+chips+'</div></div>';
+  }
+  function quick(el){input.value=el.textContent;submit();}
+  function add(role,html,cls){const d=document.createElement("div");d.className="cw-msg "+(role==="user"?"cw-user":"cw-bot")+(cls?(" "+cls):"");d.innerHTML=html;body.appendChild(d);body.scrollTop=body.scrollHeight;return d;}
+
+  function useKey(){
+    apiKey=keyInput.value.trim(); keyInput.value="";
+    keyStatus.textContent=apiKey?"Key set \u2713":"No key set";
+  }
+
+  fetch(HANDBOOK_URL).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.text();})
+    .then(text=>{systemPrompt=RULES_PREFIX+text+RULES_SUFFIX;})
+    .catch(e=>{handbookError=e;});
+
+  function callModel(question){
+    history.push({role:"user",content:question});
+    return fetch("https://api.anthropic.com/v1/messages",{
+      method:"POST",
+      headers:{
+        "Content-Type":"application/json",
+        "x-api-key":apiKey,
+        "anthropic-version":"2023-06-01",
+        "anthropic-dangerous-direct-browser-access":"true"
+      },
+      body:JSON.stringify({model:MODEL,max_tokens:800,system:systemPrompt,messages:history})
+    }).then(resp=>{
+      if(!resp.ok) return resp.text().then(t=>{throw new Error("HTTP "+resp.status+": "+t.slice(0,200));});
+      return resp.json();
+    }).then(data=>{
+      const blocks=(data.content||[]).filter(b=>b.type==="text");
+      const answer=blocks.map(b=>b.text).join("\n").trim()||"(no text returned)";
+      history.push({role:"assistant",content:answer});
+      return answer;
+    }).catch(err=>{history.pop();throw err;});
+  }
+
+  function submit(){
+    const text=input.value.trim(); if(!text||busy)return;
+    if(!body.querySelector(".cw-msg"))body.innerHTML="";
+    add("user",esc(text)); input.value="";
+
+    if(!apiKey){ add("bot","Paste an API key above and click \u201cUse key\u201d first.","cw-err"); return; }
+    if(handbookError){ add("bot","Couldn't load the handbook content ("+esc(handbookError.message)+"). Make sure handbook.md is deployed alongside this page.","cw-err"); return; }
+    if(!systemPrompt){ add("bot","Still loading the handbook \u2014 try again in a moment.","cw-err"); return; }
+
+    busy=true; sendBtn.disabled=true;
+    const typing=add("bot",'<span class="typing"><i></i><i></i><i></i></span>');
+    callModel(text).then(answer=>{
+      typing.remove(); add("bot",fmt(answer));
+    }).catch(err=>{
+      typing.remove(); add("bot","Request failed: "+esc(err&&err.message?err.message:String(err)),"cw-err");
+    }).finally(()=>{
+      busy=false; sendBtn.disabled=false; input.focus();
+    });
+  }
+  function newChat(){busy=false;history=[];renderEmpty();input.value="";input.focus();}
+  window.openCW=openCW;window.closeCW=closeCW;window.quick=quick;window.newChat=newChat;window.useKey=useKey;
+  document.getElementById("cwSend").setAttribute("onclick","submit()");
+  input.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();submit();}});
+  keyInput.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();useKey();}});
+  renderEmpty();
+</script>
+</body>
+</html>
