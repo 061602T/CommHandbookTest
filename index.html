@@ -59,11 +59,14 @@
     font:inherit;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.03em}
   .launcher:hover{background:var(--teal-dark)} .launcher svg{width:20px;height:20px}
   .cw{position:fixed;right:22px;bottom:88px;z-index:61;width:min(384px,calc(100vw - 44px));height:min(560px,calc(100vh - 150px));
-    background:#fff;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.34);display:none;flex-direction:column;overflow:hidden}
+    min-width:300px;min-height:340px;max-width:calc(100vw - 24px);max-height:calc(100vh - 100px);
+    background:#fff;border:1px solid var(--line);box-shadow:0 18px 50px rgba(0,0,0,.34);display:none;flex-direction:column;overflow:hidden;
+    resize:both}
   .cw.open{display:flex}
+  .cw.expanded{width:min(760px,calc(100vw - 44px));height:min(820px,calc(100vh - 100px))}
   .cw-h{background:var(--teal);color:#fff;padding:13px 15px;display:flex;justify-content:space-between;align-items:center}
   .cw-h .t{font-weight:700;font-size:15px} .cw-h .t small{display:block;font-weight:500;font-size:11px;color:#bfe4df}
-  .cw-h button{background:none;border:none;color:#bfe4df;font-size:20px;cursor:pointer} .cw-h button:hover{color:#fff} .cw-h .actions{display:flex;align-items:center;gap:8px} .cw-h .cw-new{font-size:12px;font-weight:600;color:#fff;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);border-radius:4px;padding:4px 9px;line-height:1.25} .cw-h .cw-new:hover{background:rgba(255,255,255,.28)}
+  .cw-h button{background:none;border:none;color:#bfe4df;font-size:20px;cursor:pointer} .cw-h button:hover{color:#fff} .cw-h .actions{display:flex;align-items:center;gap:8px} .cw-h .cw-new{font-size:12px;font-weight:600;color:#fff;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);border-radius:4px;padding:4px 9px;line-height:1.25} .cw-h .cw-new:hover{background:rgba(255,255,255,.28)} .cw-h .cw-size{font-size:13px;color:#fff;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);border-radius:4px;padding:4px 8px;line-height:1} .cw-h .cw-size:hover{background:rgba(255,255,255,.28)}
   .cw-disc{background:#fdf4dd;border-bottom:1px solid #f0d488;color:#5a4d20;font-size:11px;padding:7px 13px;line-height:1.4}
   .cw-key{background:#f4f7f5;border-bottom:1px solid var(--line);padding:8px 12px;display:flex;gap:6px;align-items:center}
   .cw-key input{flex:1;font:inherit;font-size:12px;font-family:monospace;border:1px solid var(--line);border-radius:5px;padding:6px 8px;min-width:0}
@@ -147,7 +150,7 @@
 <li>Breakfast or lunch meetings are an option; daytime rooms can be easier to get and breakfast can cost less than dinner.</li>
 <li>The City Bar encourages committees to meet at the City Bar. No City Bar programs may be held at clubs with admission policies known or publicly acknowledged to be discriminatory. Inform Meeting Services of the date and place of any outside meetings.</li>
 </ul></div></details></div><div class="panel"><details><summary>Catering Decisions</summary><div class="panel-body"><ul>
-<li>Many options (breakfast to hot dinner). Full options and prices: Committee Menu PDF <code>&lt;span class="verify" title="menu prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>Many options (breakfast to hot dinner). Full options and prices: Committee Menu PDF <span class="verify" title="menu prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org">verify current</span>.</li>
 <li>No alcoholic beverages may be brought onto City Bar premises or taken home after a meeting.</li>
 </ul></div></details></div><div class="panel"><details><summary>Committee Dues Assessments / Committee Dues Program</summary><div class="panel-body"><ul>
 <li>Assess members an amount sufficient to cover food and beverage costs for the year. Each committee sets and collects its own dues (usually via the Secretary or the Chair's appointee).</li>
@@ -174,7 +177,7 @@
 <li>If assigned, the liaison's name appears on the roster and should receive meeting notices, minutes, draft reports, and relevant correspondence.</li>
 <li>Liaisons are <strong>not committee members</strong> and do <strong>not vote</strong>; their names should not appear on any report, product, or attendance list, though they may be listed as a <strong>guest</strong> if they attend.</li>
 <li>In the fall, the liaison convenes the cluster's chairs to encourage cooperation.</li>
-<li>Board liaison assignments list: <code>&lt;span class="verify" title="the posted list is year-specific (e.g., &amp;quot;24-25&amp;quot;); confirm the current assignment on your roster or with staff"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>Board liaison assignments list: <span class="verify" title="the posted list is year-specific (e.g., &quot;24-25&quot;); confirm the current assignment on your roster or with staff">verify current</span>.</li>
 </ul></div></details></div><div class="panel"><details><summary>Annual Report</summary><div class="panel-body"><ul>
 <li>By the Chair's annual meeting with the President (generally <strong>late spring</strong>), the Chair submits a brief annual report summarizing the year's activities and next year's plans. If outgoing, the incoming chair prepares the next-year plans.</li>
 </ul></div></details></div></div></div></section>
@@ -184,7 +187,7 @@
 <li><strong>City Bar Central</strong> can send notices and gather RSVPs via a poll, and dates can be added to the group calendar. Help: coordinator-central@nycbar.org.</li>
 <li><strong>Communicate your final headcount to Catering &amp; Meeting Services at least two business days before the meeting.</strong></li>
 </ul></div></details></div><div class="panel"><details><summary>Food / Beverages at Meetings</summary><div class="panel-body"><ul>
-<li>Many options; see the Committee Menu PDF <code>&lt;span class="verify" title="prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>Many options; see the Committee Menu PDF <span class="verify" title="prices change; confirm with Linda Kemble, 212-382-6653, lkemble@nycbar.org">verify current</span>.</li>
 <li>No alcoholic beverages may be brought onto premises or taken home.</li>
 </ul></div></details></div><div class="panel"><details><summary>Billing Procedures</summary><div class="panel-body"><ul>
 <li>If food/beverage is served, the chair or designee (usually the secretary) receives a bill about <strong>one week</strong> after the meeting. <strong>Pay within 10 days.</strong> Billing questions: Meeting Services Department.</li>
@@ -207,7 +210,7 @@
 <p>Do not offer or agree to reimburse expenses of New York State or local government officials. This rule does <strong>not</strong> apply to Federal officials. Questions, or before inviting a state/local official: <strong>Mary Margulis-Ohnuma</strong>, Senior Policy Counsel (212-382-6767, mmargulis-ohnuma@nycbar.org).</p></div></details></div><div class="panel"><details><summary>Meetings Held Outside the City Bar</summary><div class="panel-body"><ul>
 <li>No City Bar meeting may be held at clubs with admission policies known or publicly acknowledged to be discriminatory. Inform the Meeting Services Department of the date and place of any outside meeting.</li>
 </ul></div></details></div></div></div></section>
-<section class="section" id="committee-finances"><header class="sec-h"><h2>Committee Finances</h2></header><div class="sec-inner"><div class="sec-intro"><p>Committee dues cover food and beverage costs for the year. <strong>The amount committees set varies widely, from $20 to $400</strong>, depending on food service. <code>&lt;span class="verify" title="this range is descriptive of past practice; treat as a guide, not a fixed rule."&gt;verify current&lt;/span&gt;</code> Many committees also use dues for gifts for members rotating off, end-of-year events, or defraying the cost of a guest speaker.</p></div><div class="accordion"><div class="panel"><details><summary>Dues Assessments / Accounts with the City Bar</summary><div class="panel-body"><ul>
+<section class="section" id="committee-finances"><header class="sec-h"><h2>Committee Finances</h2></header><div class="sec-inner"><div class="sec-intro"><p>Committee dues cover food and beverage costs for the year. <strong>The amount committees set varies widely, from $20 to $400</strong>, depending on food service. <span class="verify" title="this range is descriptive of past practice; treat as a guide, not a fixed rule.">verify current</span> Many committees also use dues for gifts for members rotating off, end-of-year events, or defraying the cost of a guest speaker.</p></div><div class="accordion"><div class="panel"><details><summary>Dues Assessments / Accounts with the City Bar</summary><div class="panel-body"><ul>
 <li>(Same assessment guidance as Section 2: assess to cover costs; two-tier option for public interest/government lawyers; recommend law students not be charged; affiliate assessments at discretion.)</li>
 <li>Each committee sets and collects its own dues; these may be sent to the City Bar, which will maintain a dues account per committee.</li>
 <li>Checks payable to the <strong>New York City Bar</strong>, sent to the secretary/appointee, who forwards them with a name/amount list to the Finance Department (CommDuesProgram@nycbar.org). Members may also pay by credit card through City Bar Central.</li>
@@ -262,7 +265,7 @@
 <ul>
 <li>Contact the Program Department <strong>as early as possible — ideally no later than 12 weeks before</strong> the anticipated date, earlier if possible.</li>
 <li>Request a date via the <strong>Event Reservation Request Form</strong>: https://services.nycbar.org/Members/Event_Reservation_Form/Members/Upload_Event_Form.aspx . The Program Department reviews/approves content, then books a date.</li>
-<li>When choosing dates, avoid days of religious observance and days of awareness, and be mindful of members' scheduling. <code>&lt;span class="verify" title="the handbook links to year-specific date lists (2024/2025); use a current-year source and confirm with the Program Department."&gt;verify current&lt;/span&gt;</code></li>
+<li>When choosing dates, avoid days of religious observance and days of awareness, and be mindful of members' scheduling. <span class="verify" title="the handbook links to year-specific date lists (2024/2025); use a current-year source and confirm with the Program Department.">verify current</span></li>
 <li>Specific rooms cannot be guaranteed.</li>
 <li><strong>Avoid hybrid</strong> — hold programs either fully in person or fully virtual (given a choice, many attendees pick virtual, leaving a sparse in-person audience).</li>
 <li>Contacts: <strong>Martha Harris</strong>, Senior Director of Programs (mharris@nycbar.org); <strong>Nayeli Bautista</strong>, Program Coordinator (NBautista@nycbar.org).</li>
@@ -292,7 +295,7 @@
 <li>A co-sponsor should actively help maximize attendance (encourage its members, share lists, email invitations, help obtain speakers) — not just lend its name.</li>
 </ul>
 <h3>Charging for Events</h3>
-<p>Pricing for <strong>non-CLE</strong> events <code>&lt;span class="verify" title="fees change; confirm current amounts with Martha Harris, mharris@nycbar.org"&gt;verify current&lt;/span&gt;</code>:
+<p>Pricing for <strong>non-CLE</strong> events <span class="verify" title="fees change; confirm current amounts with Martha Harris, mharris@nycbar.org">verify current</span>:
 - <strong>No food/beverage:</strong> members free; non-members <strong>$20</strong>.
 - <strong>With food/beverage or other expenses:</strong> members pay a fee substantially lower than non-members; the City Bar helps set member/non-member fees based on expenses.
 - <strong>Virtual programs:</strong> members free; non-members <strong>$20</strong> (unless approved otherwise).
@@ -316,7 +319,7 @@
 </ul>
 <h3>Video Recording Programs / Releases</h3>
 <ul>
-<li>Events can be recorded in the Meeting Hall and most spaces; <strong>submit requests to the Program Office at least two weeks in advance.</strong> Fee: <strong>$75 per hour, minimum 4 hours</strong> <code>&lt;span class="verify" title="confirm current fee with the Program Office"&gt;verify current&lt;/span&gt;</code>.</li>
+<li>Events can be recorded in the Meeting Hall and most spaces; <strong>submit requests to the Program Office at least two weeks in advance.</strong> Fee: <strong>$75 per hour, minimum 4 hours</strong> <span class="verify" title="confirm current fee with the Program Office">verify current</span>.</li>
 <li><strong>Virtual programs are recorded at no cost.</strong></li>
 <li>To post audio/video (podcast/recording) or give it to speakers, the committee must obtain <strong>signed speaker releases</strong> and submit them to the Program Department. Get releases in advance. Release form: https://fs26.formsite.com/nycbarassoc/recording-release-progs/index.html</li>
 </ul>
@@ -464,8 +467,8 @@
 <li><strong>Committee Reports archive:</strong> https://www.nycbar.org/reports/</li>
 <li><strong>Full committee list:</strong> https://www.nycbar.org/committees/</li>
 <li><strong>Committee Awards Policy:</strong> https://www2.nycbar.org/Committees/Handbook/docs/Committee-Awards-Policy.pdf</li>
-<li><strong>Committee Menu (catering) PDF</strong> — <code>&lt;span class="verify" title="prices"&gt;verify current&lt;/span&gt;</code></li>
-<li><strong>Board Liaison assignments PDF</strong> — <code>&lt;span class="verify" title="year-specific"&gt;verify current&lt;/span&gt;</code></li>
+<li><strong>Committee Menu (catering) PDF</strong> — <span class="verify" title="prices">verify current</span></li>
+<li><strong>Board Liaison assignments PDF</strong> — <span class="verify" title="year-specific">verify current</span></li>
 </ul></div></div></section>
 </main>
 
@@ -477,7 +480,7 @@
 </button>
 
 <div class="cw" id="cw">
-  <div class="cw-h"><div class="t">Committee Handbook Assistant<small>New York City Bar Association</small></div><div class="actions"><button class="cw-new" onclick="newChat()">New chat</button><button class="cw-x" onclick="closeCW()" aria-label="Close">&times;</button></div></div>
+  <div class="cw-h"><div class="t">Committee Handbook Assistant<small>New York City Bar Association</small></div><div class="actions"><button class="cw-new" onclick="newChat()">New chat</button><button class="cw-size" onclick="toggleSize()" id="cwSizeBtn" aria-label="Make bigger" title="Make bigger">⤢</button><button class="cw-x" onclick="closeCW()" aria-label="Close">&times;</button></div></div>
   <div class="cw-disc">Internal test build — live answers, grounded in the full handbook. Not connected to production.</div>
   <div class="cw-key">
     <input id="cwKey" type="password" placeholder="Anthropic API key (sk-ant-...)" autocomplete="off">
@@ -517,6 +520,15 @@ COMMITTEE HANDBOOK CONTENT:
 
   function openCW(){document.getElementById("cw").classList.add("open");input.focus();}
   function closeCW(){document.getElementById("cw").classList.remove("open");}
+  function toggleSize(){
+    const cw=document.getElementById("cw");
+    cw.style.width="";cw.style.height=""; // clear any manual drag-resize so the preset takes over cleanly
+    const nowExpanded=cw.classList.toggle("expanded");
+    const btn=document.getElementById("cwSizeBtn");
+    btn.textContent=nowExpanded?"⤡":"⤢";
+    btn.title=nowExpanded?"Make smaller":"Make bigger";
+    btn.setAttribute("aria-label",btn.title);
+  }
   function esc(t){return t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
   function fmt(t){let x=esc(t);
     x=x.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
@@ -580,7 +592,7 @@ COMMITTEE HANDBOOK CONTENT:
     });
   }
   function newChat(){busy=false;history=[];renderEmpty();input.value="";input.focus();}
-  window.openCW=openCW;window.closeCW=closeCW;window.quick=quick;window.newChat=newChat;window.useKey=useKey;
+  window.openCW=openCW;window.closeCW=closeCW;window.quick=quick;window.newChat=newChat;window.useKey=useKey;window.toggleSize=toggleSize;
   document.getElementById("cwSend").setAttribute("onclick","submit()");
   input.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();submit();}});
   keyInput.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();useKey();}});
